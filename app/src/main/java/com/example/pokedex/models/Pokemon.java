@@ -6,12 +6,12 @@ public class Pokemon {
     private String url;
 
     public int getNumber() {
-        return number;
-    }
-
-    public int setNumber(int number) {
         String[] urlPartes = url.split("/");
         return Integer.parseInt(urlPartes[urlPartes.length - 1]);
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public String getName() {
